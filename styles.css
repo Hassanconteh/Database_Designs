@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui;
+  background: #f4f6f9;
+  color: #0f172a;
+}
+.page {
+  padding: 40px;
+}
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+.header {
+  margin-bottom: 30px;
+}
+.title {
+  margin: 0;
+  font-size: 2rem;
+}
+.subtitle {
+  color: #64748b;
+}
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+.section-title {
+  margin-top: 0;
+}
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  margin-bottom: 15px;
+}
+.input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+}
+.input:focus {
+  outline: none;
+  border-color: #6366f1;
+}
+.btn {
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+  background: white;
+  cursor: pointer;
+}
+.btn:hover {
+  background: #f1f5f9;
+}
+.primary {
+  background: #0f172a;
+  color: white;
+  border-color: #0f172a;
+}
+.primary:hover {
+  background: #1e293b;
+}
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.transaction-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.transaction {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+.transaction.expense-high {
+  background: #ffe4e6;
+  border-color: #fca5a5;
+}
+.transaction.income-high {
+  background: #dcfce7;
+  border-color: #86efac;
+}
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+}
+.stat-box {
+  padding: 15px;
+  background: #f8fafc;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}

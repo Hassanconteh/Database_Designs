@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Expense Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="page">
+  <div class="container">
+    <header class="header">
+      <h1 class="title">Smart Expense Tracker</h1>
+      <p class="subtitle">Track income and expenses efficiently</p>
+    </header>
+    <section class="card form-card">
+      <h2 class="section-title">Add Transaction</h2>
+      <div class="form-grid">
+        <input id="description" class="input" placeholder="Description">
+        <input id="amount" type="number" class="input" placeholder="Amount">
+        <select id="type" class="input">
+          <option value="">Select Type</option>
+          <option value="income">Income</option>
+          <option value="expense">Expense</option>
+        </select>
+        <input id="category" class="input" placeholder="Category">
+        <input id="date" type="date" class="input">
+      </div>
+      <button class="btn primary" onclick="addTransaction()">Add Transaction</button>
+    </section>
+    <section class="card controls-card">
+      <div class="controls">
+        <button class="btn" onclick="showAll()">Show All</button>
+        <button class="btn" onclick="showIncome()">Income Only</button>
+        <button class="btn" onclick="showExpense()">Expense Only</button>
+        <button class="btn" onclick="sortByAmount()">Sort by Amount</button>
+      </div>
+    </section>
+    <section class="card list-card">
+      <h2 class="section-title">Transactions</h2>
+      <div id="transactionList" class="transaction-list"></div>
+    </section>
+    <section class="card stats-card">
+      <h2 class="section-title">Statistics</h2>
+      <div id="stats" class="stats-grid"></div>
+    </section>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
